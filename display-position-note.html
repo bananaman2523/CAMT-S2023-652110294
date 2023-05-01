@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<Style>
+.simplebox01{
+    border: 1px solid black;
+    background-color: green;
+    border: 20px solid pink;
+
+background-color: red;
+    margin: 40px;
+    padding: 20px;
+}
+
+.nav li{
+    display: inline;
+
+
+}
+</Style>
+</head>
+<body>
+    <h1>Box Model</h1>
+
+    <div class="simplebox01">
+    <p style="background-color: green;
+    border: 20px solid yellow;">SimpleBox</p>
+    </div>
+
+
+
+    <h1>CSS Display</h1>
+    <h2>inline</h2>
+    <div class="inline" >
+    <div style="display: inline; background-color: yellow;">inline Text01</div>
+    <div style="display: inline; background-color: orange;">inline Text02</div>
+    <div style="display:inline; background-color: red;">inline Text03</div>
+    <div style="display: inline; background-color: green;">inline Text04</div>
+    <div style="display: inline; background-color: purple;">inline Text05</div>     
+    </div>
+
+
+    <h2>Block</h2>
+    <div class="block" >
+    <div style="display: block; background-color: yellow;">inline Text01</div>
+    <div style="display: block; background-color: orange;">inline Text02</div>
+    <div style="display: block; background-color: red;">inline Text03</div>
+    <div style="display: block; background-color: green;">inline Text04</div>
+    <div style="display: block; background-color: purple;">inline Text05</div>      
+    </div>
+
+    <h2>inline-Block</h2>
+    <div class="inline-block" >
+    <div style="display: inline-block; ">apple</div>
+    <div style="display: inline-block; ">orange</div>
+    <div style="display: inline-block; ">imango</div>
+    <div style="display: inline-block; ">watermelon</div>
+
+    </div>
+
+        <h2>none</h2>
+        <div class="none" >
+        <div style="display: inline-block; ">apple</div>
+        <div style="display: inline-block; ">orange</div>
+        <div style="display: none; ">mango</div>
+        <div style="display: inline-block; ">watermelon</div>
+
+    </div>
+
+    <h2>display : none vs visible : hidden</h2>
+    <div class="none" >
+    <div style="display: inline-block; ">apple</div>
+    <div style="display: inline-block;  visibility: hidden;">orange</div>
+    <div style="display: none; ">mango</div>
+    <div style="display: inline-block; ">watermelon</div>
+
+    </div>
+
+
+    <h2>CSS Position</h2>
+    <h3>static</h3>
+    <div class="playground" >
+    <div class="shape" style="width: 50px; height: 50px;
+    position: static;
+    background-color: pink;"></div>
+    </div>
+
+    <h3>absolute</h3>
+    <h3>fix width/height</h3>
+    <div class="playground">
+    <div class="shape" style="width: 50px; height: 50px;
+    background-color: pink;
+    position: absolute;"></div>
+    </div>
+
+
+    <h3>fixed</h3>
+    <h3>fix width/heigh  + left/top</h3>
+    <div class="playground">
+    <div class="shape" style="width: 50px; height: 50px;
+    background-color: pink;
+    position: relative;">
+    <div style="border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    background-color: white;
+    color: grey;
+    position: absolute;
+    right: -12;
+    top: -12;
+    text-align: center;">
+
+    </div>    
+    </div>
+
+    </div>
+    <h3>NO width/height</h3>
+    <div class="box1" style="border: 2px solid red;
+    background-color: pink;
+    padding: 20px;">
+
+    </div>
+
+
+    <h3>Backdrop + banner</h3>
+    <div class="play">
+    <div style="position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgb(0,0,0,0.6);
+    ">
+    <div
+    style="background-color: white;
+    color: pink;
+    font-size: 32px;
+    margin-bottom: 50px;
+    text-align: center;
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 50%;
+    transform: translateY(-500%);">
+    Songkran Festival 2023
+    </div>
+
+    </div>
+    </div>
+
+</body>
+</html>
