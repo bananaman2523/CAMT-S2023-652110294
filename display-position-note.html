@@ -1,151 +1,235 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-<Style>
-.simplebox01{
-    border: 1px solid black;
-    background-color: green;
-    border: 20px solid pink;
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whatever this is</title>
+    <div class="all" style="
+            position: fixed;
+            top: 0%;
+            left: 0%;
+            background-color: rgba(128, 128, 128, 0.393);
+            width: 100%;
+            height: 100%;">
+    </div>
+    <style>
+        .Box-model {
+            border-style: dotted;
+            background-color: palegreen;
+            padding: 20px;
+            width: 650px;
+        }
 
-background-color: red;
-    margin: 40px;
-    padding: 20px;
-}
+        .margin {
+            background-color: yellow;
+            padding: 5%;
+        }
 
-.nav li{
-    display: inline;
+        .boder {
+            background-color: aquamarine;
+            padding: 5%;
+        }
+
+        .padding {
+            background-color: royalblue;
+            padding: 5%;
+        }
+
+        .text {
+            text-align: center;
+            padding: 5%;
+        }
+
+        .inline {
+            display: inline;
+        }
 
 
-}
-</Style>
+        .heaven {
+            height: 150px;
+            width: 400px;
+            background-color: antiquewhite;
+            position: relative;
+        }
+
+        .heaven .close {
+            width: 40px;
+            height: 40px;
+            background-color: #000000;
+            border-radius: 20px;
+            text-align: center;
+            position: absolute;
+            top: -30px;
+            right: -20px;
+
+        }
+
+        .close h2 {
+            text-align: center;
+            margin: 0;
+            padding-top: 5px;
+        }
+        
+    </style>
 </head>
+
 <body>
     <h1>Box Model</h1>
-
-    <div class="simplebox01">
-    <p style="background-color: green;
-    border: 20px solid yellow;">SimpleBox</p>
+    <div class="Box-model">
+        <div class="margin">
+            <div class="boder">
+                <div class="padding">
+                    <div class="text">
+                        <p>Simple Box</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-
-
 
     <h1>CSS Display</h1>
+
     <h2>inline</h2>
-    <div class="inline" >
-    <div style="display: inline; background-color: yellow;">inline Text01</div>
-    <div style="display: inline; background-color: orange;">inline Text02</div>
-    <div style="display:inline; background-color: red;">inline Text03</div>
-    <div style="display: inline; background-color: green;">inline Text04</div>
-    <div style="display: inline; background-color: purple;">inline Text05</div>     
+    <div class="Box-model">
+        <div class="inline" style="background-color: red;">
+            inline text 1
+        </div>
+        <div class="inline" style="background-color: yellow;">
+            inline text 2
+        </div>
+        <div class="inline" style="background-color: green;">
+            inline text 3
+        </div>
+        <div class="inline" style="background-color: firebrick;">
+            inline text 4
+        </div>
+        <div class="inline" style="background-color: aliceblue;">
+            inline text 5
+        </div>
     </div>
 
+    <h2>block</h2>
+    <div class="Box-model">
 
-    <h2>Block</h2>
-    <div class="block" >
-    <div style="display: block; background-color: yellow;">inline Text01</div>
-    <div style="display: block; background-color: orange;">inline Text02</div>
-    <div style="display: block; background-color: red;">inline Text03</div>
-    <div style="display: block; background-color: green;">inline Text04</div>
-    <div style="display: block; background-color: purple;">inline Text05</div>      
+        <div class="text" style="background-color: antiquewhite;">
+            block text1
+        </div>
+        <div class="text" style="background-color: aquamarine;">
+            block text2
+        </div>
+        <div class="text" style="background-color: royalblue">
+            block text3
+        </div>
+        <div class="text" style="background-color: firebrick">
+            block text4
+        </div>
+        <div class="text" style="background-color: aliceblue">
+            block text5
+        </div>
     </div>
 
-    <h2>inline-Block</h2>
-    <div class="inline-block" >
-    <div style="display: inline-block; ">apple</div>
-    <div style="display: inline-block; ">orange</div>
-    <div style="display: inline-block; ">imango</div>
-    <div style="display: inline-block; ">watermelon</div>
-
+    <h2>inlinr block</h2>
+    <div class="Box-model">
+        <div class="inline" style="background-color: antiquewhite;">
+            cat
+        </div>
+        <div class="inline" style="background-color: aquamarine;">
+            dog
+        </div>
+        <div class="inline" style="background-color: royalblue;">
+            eat
+        </div>
+        <div class="inline" style="background-color: firebrick;">
+            bat
+        </div>
+        <div class="inline" style="background-color: aliceblue;">
+            rat
+        </div>
     </div>
 
-        <h2>none</h2>
-        <div class="none" >
-        <div style="display: inline-block; ">apple</div>
-        <div style="display: inline-block; ">orange</div>
-        <div style="display: none; ">mango</div>
-        <div style="display: inline-block; ">watermelon</div>
-
+    <h2>none</h2>
+    <div class="Box-model">
+        <div class="inline" style="background-color: antiquewhite;">
+            cat
+        </div>
+        <div class="inline" style="background-color: aquamarine;">
+            dog
+        </div>
+        <div class="inline" style="background-color: royalblue;">
+            eat
+        </div>
+        <div class="inline" style="background-color: firebrick; display: none;">
+            bat
+        </div>
+        <div class="inline" style="background-color: aliceblue;">
+            rat
+        </div>
     </div>
 
-    <h2>display : none vs visible : hidden</h2>
-    <div class="none" >
-    <div style="display: inline-block; ">apple</div>
-    <div style="display: inline-block;  visibility: hidden;">orange</div>
-    <div style="display: none; ">mango</div>
-    <div style="display: inline-block; ">watermelon</div>
-
+    <h2>display:none vs visible:hidden</h2>
+    <div class="Box-model">
+        <div class="inline" style="background-color: antiquewhite;">
+            cat
+        </div>
+        <div class="inline" style="background-color: aquamarine; visibility: hidden;">
+            dog
+        </div>
+        <div class="inline" style="background-color: royalblue;">
+            eat
+        </div>
+        <div class="inline" style="background-color: firebrick; display: none;">
+            bat
+        </div>
+        <div class="inline" style="background-color: aliceblue;">
+            rat
+        </div>
     </div>
-
 
     <h2>CSS Position</h2>
-    <h3>static</h3>
-    <div class="playground" >
-    <div class="shape" style="width: 50px; height: 50px;
-    position: static;
-    background-color: pink;"></div>
+
+    <h2>Static</h2>
+    <div class="Box-model">
+        <div class="rainbow-bg" style="position: static;
+            width: 100px;
+            height: 100px;"></div>
     </div>
 
-    <h3>absolute</h3>
-    <h3>fix width/height</h3>
-    <div class="playground">
-    <div class="shape" style="width: 50px; height: 50px;
-    background-color: pink;
-    position: absolute;"></div>
+    <h2>absolute</h2>
+    <h2>fixed width/height</h2>
+    <div class="Box-model">
+        <div class="rainbow-bg" style="position: absolute;
+            width: 100px;
+            height: 100px;"></div>
     </div>
 
-
-    <h3>fixed</h3>
-    <h3>fix width/heigh  + left/top</h3>
-    <div class="playground">
-    <div class="shape" style="width: 50px; height: 50px;
-    background-color: pink;
-    position: relative;">
-    <div style="border-radius: 50%;
-    width: 24px;
-    height: 24px;
-    background-color: white;
-    color: grey;
-    position: absolute;
-    right: -12;
-    top: -12;
-    text-align: center;">
-
-    </div>    
+    <h2>no width/height</h2>
+    <div class="Box-model">
+        <div class="rainbow-bg" style="position: static;
+            border: 3px solid black"></div>
     </div>
 
-    </div>
-    <h3>NO width/height</h3>
-    <div class="box1" style="border: 2px solid red;
-    background-color: pink;
-    padding: 20px;">
-
+    <h2>fixed width/height + right/top</h2>
+    <div class="Box-model" style="
+            height: 150px;
+            width: 400px;">
+        <div class="heaven rainbow-bg">
+            <div class="close rainbow">
+                <h2>X</h2>
+            </div>
+        </div>
     </div>
 
 
-    <h3>Backdrop + banner</h3>
-    <div class="play">
-    <div style="position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    background-color: rgb(0,0,0,0.6);
-    ">
-    <div
-    style="background-color: white;
-    color: pink;
-    font-size: 32px;
-    margin-bottom: 50px;
-    text-align: center;
-    width: 300px;
-    margin: 0 auto;
-    margin-top: 50%;
-    transform: translateY(-500%);">
-    Songkran Festival 2023
-    </div>
 
-    </div>
-    </div>
 
+    
+    <div class="help ">
+        <div style="position: fixed;top: 50%;left: 50%;transform: translate(-50%, -50%);width: 300px ;text-align: center;background-color: gray;color: red;">
+            <h1>What kind of hell torture is this</h1>
+        </div>
+    </div>
 </body>
+
 </html>
