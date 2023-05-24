@@ -147,6 +147,7 @@
         }
     }
     storgeCard();
+    
     function random(max) {
         return parseInt(Math.random() * max) % max
     }
@@ -190,8 +191,8 @@
     if(card.isFaceDown == true){
             cardElm = htmlToElem(
                 '<div class="card face-down"><div class= "card-title" ></div><div class="card-body">?</div></div >'
-        )  
-    }
+        )
+        }
         else{
         
             cardElm = htmlToElem(
@@ -212,10 +213,11 @@
                 cardNumberElement.classList.add("cardheart_diamond")           
                 cardTypeElement.classList.remove("cardnormal")
                 cardNumberElement.classList.remove("cardnormal")
-            } 
+            }
         } else {
             cardTypeElement.style.color = "black"
         }
+        
     }
     }
     </script>
